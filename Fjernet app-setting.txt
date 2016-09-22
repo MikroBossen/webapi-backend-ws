@@ -1,0 +1,4 @@
+<appSettings>
+    <add key="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=storageaccboss;AccountKey=7UtUtAh88+ggOrBkH/57DJQ74ufPRNlLcb/LLGTSNiWbn2yq5ts1n2SJZEVn6+bYURDrO4jZeR2PPN00wCPM/A==" />
+  </appSettings>
+  

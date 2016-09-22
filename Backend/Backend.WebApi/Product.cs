@@ -1,18 +1,23 @@
-﻿using System;
+﻿using Microsoft.WindowsAzure.Storage.Table;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
 namespace Backend.WebApi
 {
-    public class Product
+    public class Product : TableEntity
     {
         private int id;
         private string name;
         private string category;
-        private decimal price;
+        //private decimal price;
+        private double price;
 
-        public Product(int Id, string Name, string Category, decimal Price)
+        public Product() { }
+
+        //public Product(int Id, string Name, string Category, decimal Price)
+        public Product(int Id, string Name, string Category, double Price)
         {
             this.id = Id;
             this.name = Name;
@@ -56,7 +61,8 @@ namespace Backend.WebApi
             }
         }
 
-        public decimal Price
+        //public decimal Price
+        public double Price
         {
             get
             {
